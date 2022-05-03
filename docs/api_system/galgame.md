@@ -23,7 +23,7 @@
 
 您可以使用任何支持解析 JSON 字符组和发起 HTTP 请求的编程语言调用本服务。
 
-本 API 服务的请求地址为：[https://api.gcxstudio.cn/galgame.php](https://api.gcxstudio.cn/galgame.php)
+本 API 服务的请求地址为：[https://v2.gcxstudio.cn/api/galgame.php](https://v2.gcxstudio.cn/api/galgame.php)
 
 ### 可使用参数
 
@@ -40,7 +40,7 @@
 ```php
 try {
     ini_set('default_socket_timeout', 1);
-    $motd = file_get_contents("https://api.gcxstudio.cn/galgame.php?name=xxx&type=json_text");
+    $motd = file_get_contents("https://v2.gcxstudio.cn/api/galgame.php?name=xxx&type=json_text");
 }
 ```
 

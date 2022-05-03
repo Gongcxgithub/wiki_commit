@@ -1,4 +1,4 @@
-# 优秀开源项目 CDN 服务
+# 开源项目 CDN 服务
 
 ## 简介
 
@@ -33,14 +33,59 @@
 
 按照以下表进行静态资源调用
 
-| 项目名                         | 地址                                                                               | 资源路径          | 镜像内容      |
-| ------------------------------ | ---------------------------------------------------------------------------------- | ----------------- | ------------- |
-| Material Design User Interface | [https://api.gcxstudio.cn/mdui/](https://api.gcxstudio.cn/mdui/)                   | Github 发行版路径 | Github 发行版 |
-| Bootstrap v5                   | [https://api.gcxstudio.cn/bootstrap/](https://api.gcxstudio.cn/bootstrap/)         | 官方资源包路径    | 官方资源包    |
-| Argon Theme                    | [https://api.gcxstudio.cn/argon/v%theme_version%](https://api.gcxstudio.cn/argon/) | Github 发行版路径 | Github 发行版 |
-| jQuery                         | [https://api.gcxstudio.cn/jquery/version](https://api.gcxstudio.cn/jquery/)        | jsDelivr 路径     | 官方资源包    |
-| Docsify & 官方插件             | [https://api.gcxstudio.cn/docsify ](https://api.gcxstudio.cn/docsify)              | jsDelivr 路径     | Github 发行版 |
-| Font Awesome Free              | [https://api.gcxstudio.cn/font-awesome](https://api.gcxstudio.cn/font-awesome)    | 官方资源包路径    | 官方资源包    |
+| 项目名                         | 地址                                                                                                   | 资源路径          | 镜像内容      |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------ | ----------------- | ------------- |
+| Material Design User Interface | [https://v2.gcxstudio.cn/global-cdn/mdui/](https://v2.gcxstudio.cn/global-cdn/mdui/)                   | Github 发行版路径 | Github 发行版 |
+| Bootstrap v5                   | [https://v2.gcxstudio.cn/global-cdn/bootstrap/](https://v2.gcxstudio.cn/global-cdn/bootstrap/)         | 官方资源包路径    | 官方资源包    |
+| Argon Theme                    | [https://v2.gcxstudio.cn/global-cdn/argon/v%theme_version%](https://v2.gcxstudio.cn/global-cdn/argon/) | Github 发行版路径 | Github 发行版 |
+| jQuery                         | [https://v2.gcxstudio.cn/global-cdn/jquery/version](https://v2.gcxstudio.cn/global-cdn/jquery/)        | 官方资源包路径    | 官方资源包    |
+| Docsify & 官方插件             | [https://v2.gcxstudio.cn/global-cdn/docsify ](https://v2.gcxstudio.cn/global-cdn/docsify)              | 官方资源包路径    | Github 发行版 |
+| Font Awesome Free              | [https://v2.gcxstudio.cn/global-cdn/font-awesome](https://v2.gcxstudio.cn/font-awesome)                | 官方资源包路径    | 官方资源包    |
+
+路径展示：
+
+```
+global-cdn/
+├── argon/
+│   ├── 目录过于复杂不展示
+├── bootstrap/
+│   ├── css/
+│   ├── js/
+├── docsify/
+│   ├── lib/
+│   ├── pagination/
+│   ├── themes/
+├── font-awesome/
+│   ├── css/
+│   ├── js/
+│   ├── less/
+│   ├── metadata/
+│   ├── scss/
+│   ├── sprites/
+│   ├── svgs/
+│   ├── webfonts/
+├── jquery/
+│   ├── 3.6.0/
+├── mdui/
+│   ├── css/
+│   ├── fonts/
+│   ├── icons/
+│   ├── js/
+├── odometer/
+│   ├── odometer.min.js
+│   ├── odometer-theme-minimal.css
+├── particles/
+│   ├── particles.js
+│   ├── particles.min.js
+├── player/
+│   ├── video-js/
+│   ├── hls.js/
+│   ├── flv.js/
+│   ├── dplayer/
+│   ├── dashjs/
+│   ├── aplayer/
+└── v2.gcxstudio.cn
+```
 
 ## 举例
 
@@ -50,14 +95,14 @@
 <!-- 调用 MDUI 的 JavaScirpt 资源 -->
 <scirpt
   type="text/javascript"
-  src="//api.gcxstudio.cn/mdui/js/mdui.min.js"
+  src="//v2.gcxstudio.cn/global-cdn/mdui/js/mdui.min.js"
   crossorigin="anonymous"
 ></scirpt>
 <!-- 调用 MDUI 的 SCSS 文件 -->
 <link
   type="text/css"
   rel="stylesheet"
-  href="//api.gcxstudio.cn/mdui/css/mdui.min.css"
+  href="//v2.gcxstudio.cn/global-cdn/mdui/css/mdui.min.css"
   crossorigin="anonymous"
 />
 ```

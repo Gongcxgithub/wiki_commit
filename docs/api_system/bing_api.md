@@ -1,4 +1,4 @@
-# Bing 每日一图 API
+# 每日一图
 
 ## 简介
 
@@ -20,7 +20,7 @@
 
 您可以随意所有支持直接展示远程外链图片的程序或支持解析 JSON 或 XML 的编程语言
 
-本 API 服务的请求地址为：[https://api.gcxstudio.cn/bing.php](https://api.gcxstudio.cn/bing.php)
+本 API 服务的请求地址为：[https://v2.gcxstudio.cn/api/bing.php](https://v2.gcxstudio.cn/api/bing.php)
 
 ### 可使用参数
 
@@ -36,7 +36,7 @@
 ```php
 try {
     ini_set('default_socket_timeout', 1);
-    $motd = file_get_contents("https://api.gcxstudio.cn/bing.php?type=json");
+    $motd = file_get_contents("https://v2.gcxstudio.cn/api/bing.php?type=json");
 }
 ```
 

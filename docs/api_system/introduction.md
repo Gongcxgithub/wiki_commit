@@ -22,7 +22,7 @@ Example（Galgame API）：
 
 ```javascript
 // 使用 Fetch 获取 API 信息
-fetch("//api.gcxstudio.cn/gcxbot_gal/index.php?type=json&name=Gong_cx");
+fetch("//v2.gcxstudio.cn/api/galgame.php?type=json&name=Gong_cx");
 ```
 
 返回信息：
